@@ -1,0 +1,196 @@
+/* ===== Home Page ===== */
+
+.home {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #f4f8fc;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1436491865332-7a61a109cc05");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* Dark Overlay */
+.hero-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.hero-overlay h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.hero-overlay p {
+  font-size: 20px;
+  max-width: 700px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+/* ===== Search Box ===== */
+.search-box {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  width: 90%;
+  max-width: 1100px;
+}
+
+.search-box input {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  width: 200px;
+  font-size: 16px;
+}
+
+.search-box button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  background: #0b3d91;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-box button:hover {
+  background: #1456c2;
+  transform: translateY(-2px);
+}
+
+/* ===== Section Common ===== */
+.destinations,
+.airlines {
+  padding: 80px 8%;
+}
+
+.destinations h2,
+.airlines h2 {
+  text-align: center;
+  font-size: 40px;
+  color: #0b3d91;
+  margin-bottom: 50px;
+}
+
+/* ===== Destination Cards ===== */
+.destination-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.destination-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.destination-card:hover {
+  transform: translateY(-10px);
+}
+
+.destination-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.destination-card h3 {
+  padding: 20px;
+  text-align: center;
+  color: #0b3d91;
+  font-size: 24px;
+}
+
+/* ===== Airline Cards ===== */
+.airline-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.airline-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+  transition: 0.3s;
+}
+
+.airline-card:hover {
+  transform: translateY(-10px);
+}
+
+.airline-card img {
+  width: 150px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.airline-card h3 {
+  color: #0b3d91;
+  font-size: 22px;
+}
+
+/* ===== Responsive ===== */
+@media screen and (max-width: 768px) {
+  .hero-overlay h1 {
+    font-size: 40px;
+  }
+
+  .hero-overlay p {
+    font-size: 16px;
+  }
+
+  .search-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-box input {
+    width: 100%;
+  }
+
+  .search-box button {
+    width: 100%;
+  }
+
+  .destinations h2,
+  .airlines h2 {
+    font-size: 32px;
+  }
+}

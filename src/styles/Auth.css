@@ -1,0 +1,86 @@
+/* ===== Auth Page ===== */
+.auth-page {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(
+    to right,
+    #0b3d91,
+    #1456c2
+  );
+
+  padding: 20px;
+}
+
+/* ===== Auth Container ===== */
+.auth-container {
+  width: 100%;
+  max-width: 450px;
+
+  background: white;
+
+  padding: 40px;
+  border-radius: 20px;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+
+  text-align: center;
+}
+
+.auth-container h1 {
+  color: #0b3d91;
+  margin-bottom: 30px;
+}
+
+/* ===== Form ===== */
+.auth-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-container input {
+  padding: 15px;
+
+  margin-bottom: 20px;
+
+  border: 1px solid #ccc;
+  border-radius: 10px;
+
+  outline: none;
+  font-size: 16px;
+}
+
+/* ===== Button ===== */
+.auth-container button {
+  padding: 15px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #0b3d91;
+  color: white;
+
+  font-size: 16px;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.auth-container button:hover {
+  background: #1456c2;
+}
+
+/* ===== Links ===== */
+.auth-container p {
+  margin-top: 20px;
+  color: #444;
+}
+
+.auth-container a {
+  color: #0b3d91;
+  font-weight: bold;
+  text-decoration: none;
+}

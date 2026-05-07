@@ -1,0 +1,89 @@
+/* ===== Flight Card ===== */
+.flight-card {
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+  transition: 0.3s;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.flight-card:hover {
+  transform: translateY(-8px);
+}
+
+/* ===== Airline Image ===== */
+.flight-image {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  padding: 20px;
+  background: #f4f8fc;
+}
+
+/* ===== Details ===== */
+.flight-details {
+  padding: 25px;
+}
+
+.flight-details h2 {
+  color: #0b3d91;
+  margin-bottom: 20px;
+}
+
+.flight-details p {
+  margin-bottom: 10px;
+  color: #444;
+}
+
+/* ===== Price ===== */
+.price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0b3d91;
+  margin-top: 15px;
+}
+
+/* ===== Seats ===== */
+.seats {
+  color: green;
+  font-weight: 500;
+}
+
+/* ===== Button ===== */
+.flight-details button {
+  width: 100%;
+  padding: 14px;
+
+  margin-top: 20px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #0b3d91;
+  color: white;
+
+  font-size: 16px;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.flight-details button:hover {
+  background: #1456c2;
+}
+
+/* ===== Responsive ===== */
+@media screen and (max-width: 768px) {
+  .flight-details {
+    padding: 20px;
+  }
+
+  .price {
+    font-size: 22px;
+  }
+}

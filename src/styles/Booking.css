@@ -1,0 +1,103 @@
+/* ===== Page ===== */
+.bookings-page {
+  min-height: 100vh;
+
+  padding: 50px 8%;
+
+  background: #f4f8fc;
+}
+
+/* ===== Heading ===== */
+.bookings-page h1 {
+  text-align: center;
+
+  color: #0b3d91;
+
+  margin-bottom: 50px;
+
+  font-size: 45px;
+}
+
+/* ===== Container ===== */
+.booking-container {
+  display: grid;
+
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(320px, 1fr)
+  );
+
+  gap: 30px;
+}
+
+/* ===== Booking Card ===== */
+.booking-card {
+  background: white;
+
+  padding: 30px;
+
+  border-radius: 20px;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+  transition: 0.3s;
+}
+
+.booking-card:hover {
+  transform: translateY(-8px);
+}
+
+.booking-card h2 {
+  color: #0b3d91;
+
+  margin-bottom: 20px;
+}
+
+.booking-card p {
+  margin-bottom: 12px;
+
+  color: #444;
+
+  font-size: 16px;
+}
+
+/* ===== Button ===== */
+.booking-card button {
+  width: 100%;
+
+  margin-top: 20px;
+  padding: 14px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: red;
+  color: white;
+
+  font-size: 16px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.booking-card button:hover {
+  background: darkred;
+}
+
+/* ===== No Booking ===== */
+.no-booking {
+  text-align: center;
+  color: gray;
+}
+
+/* ===== Responsive ===== */
+@media screen and (max-width: 768px) {
+  .bookings-page {
+    padding: 40px 5%;
+  }
+
+  .bookings-page h1 {
+    font-size: 35px;
+  }
+}

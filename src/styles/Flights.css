@@ -1,0 +1,77 @@
+/* ===== Flights Page ===== */
+.flights-page {
+  min-height: 100vh;
+  background: #f4f8fc;
+  padding: 50px 8%;
+}
+
+/* ===== Header ===== */
+.flights-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.flights-header h1 {
+  font-size: 50px;
+  color: #0b3d91;
+  margin-bottom: 15px;
+}
+
+.flights-header p {
+  font-size: 18px;
+  color: #555;
+}
+
+/* ===== Search ===== */
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.search-container input {
+  width: 400px;
+  max-width: 100%;
+
+  padding: 15px 20px;
+
+  border: 1px solid #ccc;
+  border-radius: 12px;
+
+  outline: none;
+
+  font-size: 16px;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== Flights Container ===== */
+.flights-container {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+  gap: 35px;
+}
+
+/* ===== No Flights ===== */
+.no-flights {
+  text-align: center;
+  color: red;
+  margin-top: 50px;
+}
+
+/* ===== Responsive ===== */
+@media screen and (max-width: 768px) {
+  .flights-page {
+    padding: 40px 5%;
+  }
+
+  .flights-header h1 {
+    font-size: 36px;
+  }
+
+  .flights-header p {
+    font-size: 16px;
+  }
+}
